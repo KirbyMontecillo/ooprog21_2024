@@ -7,8 +7,8 @@ public class CarlysEventPrice
         Scanner input = new Scanner(System.in);
         System.out.print("Enter number of guests: ");
         int numberOfGuest = input.nextInt();
-        final int price = 35;
-        int totalPrice = numberOfGuest * price;
+        final int PRICE_PER_PERSON = 35;
+        int totalPrice = numberOfGuest * PRICE_PER_PERSON;
 
         System.out.println("");
         System.out.println("*************************************************");
@@ -16,7 +16,7 @@ public class CarlysEventPrice
         System.out.println("*************************************************");
         System.out.println("");
         System.out.println("Number of guests: " + numberOfGuest);
-        System.out.println("Price per guest: " + price);
+        System.out.println("Price per guest: " + PRICE_PER_PERSON);
         System.out.println("Total price: " + totalPrice);
         System.out.println("");
 
