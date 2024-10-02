@@ -2,22 +2,22 @@ class Billing
 {
     public void computeBill(double price) 
     {
-        double total = price * (1 + 0.08);
+        double total = price + (price * 0.08);
         System.out.println("The total price for the bill is: " + total);
     }
 
     public void computeBill(double price, int quantity) 
     {
-        double total = (price * quantity) * (1 + 0.08);
+        double noTax = price * quantity;
+        double total = noTax + (noTax * 0.08);
         System.out.println("The total price for the bill is: " + total);
     }
 
 
     public void computeBill(double price, int quantity, int discount) 
     {
-        double tax = 0.08;
-        double totalBeforeTax = (price * quantity) - discount;
-        double total = totalBeforeTax * (1 + 0.08);
+        double withoutTax = (price * quantity) - discount;
+        double total = withoutTax + (withoutTax * 0.08);
         System.out.println("The total price for the bill is: " + total);
     }
     
