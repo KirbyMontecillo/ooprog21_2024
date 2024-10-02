@@ -1,0 +1,17 @@
+import java.lang.Math;
+class MathTest
+{
+   public static void main (String [] args)
+   {
+      double a = 37;
+      System.out.println("SQRT: " + Math.sqrt(a));
+      System.out.println("SIN: " + Math.sin(a));
+      System.out.println("COS: " + Math.cos(a));
+      System.out.println("FLOOR: " + Math.floor(a));
+      System.out.println("CEIL: " + Math.ceil(a));
+      System.out.println("ROUND: " + Math.cos(a));
+      System.out.println("MAX: " + Math.cos(a));
+      System.out.println("MIN: " + Math.cos(a));
+      System.out.println("RANDOM: " + Math.random(a));
+   }
+}
